@@ -1,0 +1,34 @@
+10
+
+dir
+732
+https://subversion.assembla.com/svn/geni_mps/trunk/Duke%20E-%20Requirement/IPad/Duke%20E%20Recurement/Duke%20E%20Recurement/BOs
+https://subversion.assembla.com/svn/geni_mps
+
+
+
+2012-05-24T09:47:23.169137Z
+227
+waqas.butt
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+0a9c555f-8c64-486a-9d7f-ce030d89f029
+
+EventBO
+dir
+
+StudentBO
+dir
+

@@ -1,0 +1,26 @@
+//
+// Prefix header for all source files of the 'Duke E Recurement' target in the 'Duke E Recurement' project
+//
+
+#import <Availability.h>
+
+#ifndef __IPHONE_4_0
+#warning "This project uses features only available in iOS SDK 4.0 and later."
+#endif
+
+#ifdef __OBJC__
+    #import <UIKit/UIKit.h>
+    #import <Foundation/Foundation.h>
+#endif
+
+
+#define BaseURL @"http://services.experience.com/services"
+#define SuccessKey @"Success"
+#define FailureKey @"Failure"
+#define Errorkey @"Error"
+#define kUserID @"123"
+#define kCheckInStudentBtn @"check-in-students-up.png"
+#define kCheckInStudentBtnHighlighted @"check-in-students-pressed.png"
+#define kStudentListBtn @"student-list-up.png"
+#define kStudentListBtnHighlighted @"student-list-pressed.png"
+
