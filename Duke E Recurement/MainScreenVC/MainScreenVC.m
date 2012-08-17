@@ -487,7 +487,7 @@
 	if ([results objectForKey:FailureKey]) 
 	{		
 		UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Error" 
-														message:@"No Attenees Found."
+														message:@"No Attendees Found."
                                                        delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
 		[alert show];
 		[alert release];

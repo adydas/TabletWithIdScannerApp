@@ -73,7 +73,6 @@
 	myIndicator.center = CGPointMake(500, 370);
     [myIndicator startAnimating];
 	myIndicator.hidesWhenStopped = NO;
-ç
     [darkView addSubview:myIndicator];
     [myIndicator release];
     
