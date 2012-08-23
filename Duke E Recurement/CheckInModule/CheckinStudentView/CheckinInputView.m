@@ -78,8 +78,8 @@
         AppDelegate *delegate = [[UIApplication sharedApplication]delegate];
         [delegate removeDarkView];
 
-        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Error" 
-                                                        message:@"Please Filled one of Required Field."
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Alert" 
+                                                        message:@"Please fill at least 1 required field."
                                                        delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
         [alert show];
         [alert release];
@@ -136,7 +136,7 @@
     
     if ([results objectForKey:FailureKey]) 
 	{		
-		UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Error" 
+		UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Alert" 
 														message:@"No Student Found."
                                                        delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
 		[alert show];
@@ -157,8 +157,8 @@
 	{	
         NSArray *tempArray = [results objectForKey:SuccessKey];
         if([tempArray count]<=0){
-            UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Error" 
-                                                            message:@"Invalid First Name or Last Name."
+            UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Alert" 
+                                                            message:@"Invalid First or Last Name."
                                                            delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
             [alert show];
             [alert release];
@@ -212,7 +212,7 @@
     
     if ([results objectForKey:FailureKey]) 
 	{		
-		UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Error" 
+		UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Alert" 
 														message:@"No Student Found."
                                                        delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
 		[alert show];

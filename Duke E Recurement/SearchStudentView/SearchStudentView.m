@@ -133,7 +133,7 @@
     
 	if ([results objectForKey:FailureKey]) 
 	{		
-		UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Error" 
+		UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Alert" 
 														message:@"No Student Found."
                                                        delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
 		[alert show];

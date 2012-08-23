@@ -503,9 +503,9 @@
 	[darkView removeFromSuperview];
 	if ([results objectForKey:FailureKey]) 
 	{		
-		UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Error" 
+		UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Alert" 
 														message:@"No Attendees Found."
-                                                       delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
+                                                        delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
 		[alert show];
 		[alert release];
         
@@ -520,7 +520,7 @@
 	else if ([results objectForKey:Errorkey]) {
         
 		NSError *error=[results objectForKey:Errorkey];
-		UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Error" 
+		UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Alert" 
 														message:[error localizedDescription] delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
 		[alert show];
 		[alert release];

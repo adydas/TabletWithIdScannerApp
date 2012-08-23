@@ -9,6 +9,7 @@
 #import "NetworkController.h"
 #import "Reachability.h"
 #import "ASIHTTPRequest.h"
+#import "KeychainItemWrapper.h"
 
 
 @implementation NetworkController
@@ -81,12 +82,19 @@ NetworkController *SharedNetworkInstance;
 	NSLog(@"URL %@",requestUrl);
 	NSLog(@"JsonString %@",jsonString);
 	NSString *responseStr = nil;
+    
+    KeychainItemWrapper *keychainItem = [[KeychainItemWrapper alloc] initWithIdentifier:@"ExperienceCSOLogin" accessGroup:nil];
+    NSString *password = [keychainItem objectForKey:kSecValueData];
+    NSString *username = [keychainItem objectForKey:kSecAttrAccount];
+    
+    
+    
     @try{
 		
     
 		ASIHTTPRequest *request = [ASIHTTPRequest requestWithURL:[NSURL URLWithString:[requestUrl stringByAddingPercentEscapesUsingEncoding:NSASCIIStringEncoding]]];
         
-        [request addBasicAuthenticationHeaderWithUsername:@"seleniumadmin" andPassword:@"test"];
+        [request addBasicAuthenticationHeaderWithUsername:username andPassword:password];
         [request applyAuthorizationHeader];
         
 		[request setTimeOutSeconds:20];

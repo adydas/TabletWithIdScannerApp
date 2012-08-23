@@ -61,7 +61,7 @@
 	[darkView removeFromSuperview];
 	if ([results objectForKey:FailureKey]) 
 	{		
-		UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Error" 
+		UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Alert" 
 														message:@"Invalid Username or Password."
                                                        delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
 		[alert show];
