@@ -11,6 +11,7 @@
 #import "SBJsonParser.h"
 #import "StudentBO.h"
 #import "EventBO.h"
+#import "KeychainItemWrapper.h"
 
 @implementation BLController
 
@@ -29,6 +30,9 @@
 		return [NSDictionary dictionaryWithObject:error forKey:Errorkey];
 	}
 	else {
+        KeychainItemWrapper *keychainItem = [[KeychainItemWrapper alloc] initWithIdentifier:@"ExperienceCSOLogin" accessGroup:nil];
+        [keychainItem setObject:userEmail forKey:kSecValueData];
+        [keychainItem setObject:userPassword forKey:kSecAttrAccount];
 		return [BLController handleResponseForLogin:responseStr];
 	}
 }

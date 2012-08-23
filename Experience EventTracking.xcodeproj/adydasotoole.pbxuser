@@ -1,0 +1,146 @@
+// !$*UTF8*$!
+{
+	5F2866DF15DEC68500BE4564 /* Duke E Recurement */ = {
+		isa = PBXExecutable;
+		activeArgIndices = (
+		);
+		argumentStrings = (
+		);
+		autoAttachOnCrash = 1;
+		breakpointsEnabled = 0;
+		configStateDict = {
+		};
+		customDataFormattersEnabled = 1;
+		dataTipCustomDataFormattersEnabled = 1;
+		dataTipShowTypeColumn = 1;
+		dataTipSortType = 0;
+		debuggerPlugin = GDBDebugging;
+		disassemblyDisplayState = 0;
+		enableDebugStr = 1;
+		environmentEntries = (
+		);
+		executableSystemSymbolLevel = 0;
+		executableUserSymbolLevel = 0;
+		libgmallocEnabled = 0;
+		name = "Duke E Recurement";
+		showTypeColumn = 0;
+		sourceDirectories = (
+		);
+	};
+	5F2866FA15DEC6A500BE4564 /* Source Control */ = {
+		isa = PBXSourceControlManager;
+		fallbackIsa = XCSourceControlManager;
+		isSCMEnabled = 0;
+		scmConfiguration = {
+			repositoryNamesForRoots = {
+				"" = "";
+			};
+		};
+	};
+	5F2866FB15DEC6A500BE4564 /* Code sense */ = {
+		isa = PBXCodeSenseManager;
+		indexTemplatePath = "";
+	};
+	5F2866FF15DEC95900BE4564 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = FB6461041574D3920097780B /* MainScreenVC.h */;
+		name = "MainScreenVC.h: 25";
+		rLen = 0;
+		rLoc = 662;
+		rType = 0;
+		vrLen = 1102;
+		vrLoc = 0;
+	};
+	5F6F98BC15E647DB001D51C9 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = FB6461051574D3920097780B /* MainScreenVC.m */;
+		name = "MainScreenVC.m: 12";
+		rLen = 0;
+		rLoc = 262;
+		rType = 0;
+		vrLen = 1096;
+		vrLoc = 0;
+	};
+	5FB7E51F15DECBF900E8CDF1 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = FB6461051574D3920097780B /* MainScreenVC.m */;
+		name = "MainScreenVC.m: 12";
+		rLen = 0;
+		rLoc = 262;
+		rType = 0;
+		vrLen = 1096;
+		vrLoc = 0;
+	};
+	FB093EC1156A0E2F00D62B89 /* Project object */ = {
+		activeBuildConfigurationName = Debug;
+		activeExecutable = 5F2866DF15DEC68500BE4564 /* Duke E Recurement */;
+		activeTarget = FB093EC9156A0E2F00D62B89 /* Experience EventTracking */;
+		codeSenseManager = 5F2866FB15DEC6A500BE4564 /* Code sense */;
+		executables = (
+			5F2866DF15DEC68500BE4564 /* Duke E Recurement */,
+		);
+		perUserDictionary = {
+			PBXConfiguration.PBXFileTableDataSource3.PBXFileTableDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					1008,
+					20,
+					48,
+					43,
+					43,
+					20,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXFileDataSource_FiletypeID,
+					PBXFileDataSource_Filename_ColumnID,
+					PBXFileDataSource_Built_ColumnID,
+					PBXFileDataSource_ObjectSize_ColumnID,
+					PBXFileDataSource_Errors_ColumnID,
+					PBXFileDataSource_Warnings_ColumnID,
+					PBXFileDataSource_Target_ColumnID,
+				);
+			};
+			PBXPerProjectTemplateStateSaveDate = 367413194;
+			PBXWorkspaceStateSaveDate = 367413194;
+		};
+		perUserProjectItems = {
+			5F2866FF15DEC95900BE4564 /* PBXTextBookmark */ = 5F2866FF15DEC95900BE4564 /* PBXTextBookmark */;
+			5F6F98BC15E647DB001D51C9 /* PBXTextBookmark */ = 5F6F98BC15E647DB001D51C9 /* PBXTextBookmark */;
+			5FB7E51F15DECBF900E8CDF1 /* PBXTextBookmark */ = 5FB7E51F15DECBF900E8CDF1 /* PBXTextBookmark */;
+		};
+		sourceControlManager = 5F2866FA15DEC6A500BE4564 /* Source Control */;
+		userBuildSettings = {
+		};
+	};
+	FB093EC9156A0E2F00D62B89 /* Experience EventTracking */ = {
+		activeExec = 0;
+		executables = (
+			5F2866DF15DEC68500BE4564 /* Duke E Recurement */,
+		);
+	};
+	FB6461041574D3920097780B /* MainScreenVC.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1171, 806}}";
+			sepNavSelRange = "{662, 0}";
+			sepNavVisRange = "{0, 1102}";
+		};
+	};
+	FB6461051574D3920097780B /* MainScreenVC.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1171, 7423}}";
+			sepNavSelRange = "{262, 0}";
+			sepNavVisRange = "{0, 1096}";
+			sepNavWindowFrame = "{{1680, 150}, {1563, 900}}";
+		};
+	};
+	FBF39C871574A1C7001CA107 /* LoginVC.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1504, 1560}}";
+			sepNavSelRange = "{468, 0}";
+			sepNavVisRange = "{0, 1426}";
+			sepNavWindowFrame = "{{1680, 150}, {1563, 900}}";
+		};
+	};
+}

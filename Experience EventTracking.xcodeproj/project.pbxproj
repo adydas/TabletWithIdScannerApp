@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5F1F8B8415E651C300B69959 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F1F8B8315E651C300B69959 /* Security.framework */; };
+		5F1F8B9215E655FC00B69959 /* KeychainItemWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F1F8B9115E655FC00B69959 /* KeychainItemWrapper.m */; };
+		5F1F9C0E15DEE5B3006A4EDB /* icon-72.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F1F9C0B15DEE5B3006A4EDB /* icon-72.png */; };
+		5F1F9C0F15DEE5B3006A4EDB /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F1F9C0C15DEE5B3006A4EDB /* icon.png */; };
+		5F1F9C1015DEE5B3006A4EDB /* icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F1F9C0D15DEE5B3006A4EDB /* icon@2x.png */; };
 		FB093ECF156A0E2F00D62B89 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB093ECE156A0E2F00D62B89 /* UIKit.framework */; };
 		FB093ED1156A0E2F00D62B89 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB093ED0156A0E2F00D62B89 /* Foundation.framework */; };
 		FB093ED3156A0E2F00D62B89 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB093ED2156A0E2F00D62B89 /* CoreGraphics.framework */; };
@@ -103,14 +108,20 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		FB093ECA156A0E2F00D62B89 /* Duke E Recurement.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Duke E Recurement.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F1F8B8315E651C300B69959 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		5F1F8B9015E655FC00B69959 /* KeychainItemWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeychainItemWrapper.h; sourceTree = "<group>"; };
+		5F1F8B9115E655FC00B69959 /* KeychainItemWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeychainItemWrapper.m; sourceTree = "<group>"; };
+		5F1F9C0B15DEE5B3006A4EDB /* icon-72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-72.png"; sourceTree = "<group>"; };
+		5F1F9C0C15DEE5B3006A4EDB /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
+		5F1F9C0D15DEE5B3006A4EDB /* icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon@2x.png"; sourceTree = "<group>"; };
+		FB093ECA156A0E2F00D62B89 /* Experience EventTracking.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Experience EventTracking.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB093ECE156A0E2F00D62B89 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		FB093ED0156A0E2F00D62B89 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		FB093ED2156A0E2F00D62B89 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		FB093ED6156A0E2F00D62B89 /* Duke E Recurement-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Duke E Recurement-Info.plist"; sourceTree = "<group>"; };
+		FB093ED6156A0E2F00D62B89 /* Experience EventTracking-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Experience EventTracking-Info.plist"; sourceTree = "<group>"; };
 		FB093ED8156A0E2F00D62B89 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		FB093EDA156A0E2F00D62B89 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		FB093EDC156A0E2F00D62B89 /* Duke E Recurement-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Duke E Recurement-Prefix.pch"; sourceTree = "<group>"; };
+		FB093EDC156A0E2F00D62B89 /* Experience EventTracking-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Experience EventTracking-Prefix.pch"; sourceTree = "<group>"; };
 		FB093EDD156A0E2F00D62B89 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		FB093EDE156A0E2F00D62B89 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		FB20CD6B157F30E500ED6296 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
@@ -252,6 +263,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5F1F8B8415E651C300B69959 /* Security.framework in Frameworks */,
 				FB20CD6F157F318D00ED6296 /* MediaPlayer.framework in Frameworks */,
 				FB20CD6C157F30E500ED6296 /* MessageUI.framework in Frameworks */,
 				FBEA8B38157C8840002EC9D9 /* AudioToolbox.framework in Frameworks */,
@@ -270,9 +282,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5F1F9C0A15DEE563006A4EDB /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				5F1F9C0B15DEE5B3006A4EDB /* icon-72.png */,
+				5F1F9C0C15DEE5B3006A4EDB /* icon.png */,
+				5F1F9C0D15DEE5B3006A4EDB /* icon@2x.png */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
 		FB093EBF156A0E2F00D62B89 = {
 			isa = PBXGroup;
 			children = (
+				5F1F8B8315E651C300B69959 /* Security.framework */,
 				FB093ED4156A0E2F00D62B89 /* Duke E Recurement */,
 				FB093ECD156A0E2F00D62B89 /* Frameworks */,
 				FB093ECB156A0E2F00D62B89 /* Products */,
@@ -282,7 +305,7 @@
 		FB093ECB156A0E2F00D62B89 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				FB093ECA156A0E2F00D62B89 /* Duke E Recurement.app */,
+				FB093ECA156A0E2F00D62B89 /* Experience EventTracking.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -309,6 +332,7 @@
 		FB093ED4156A0E2F00D62B89 /* Duke E Recurement */ = {
 			isa = PBXGroup;
 			children = (
+				5F1F9C0A15DEE563006A4EDB /* Resources */,
 				FB20CD7C157F8CFA00ED6296 /* CardReaderSDK */,
 				FBEA8B2C157C87B1002EC9D9 /* CheckinModule */,
 				FBDF9267157529980035BB85 /* EventAttendeeModule */,
@@ -331,11 +355,11 @@
 			isa = PBXGroup;
 			children = (
 				FBF39C8B1574A61D001CA107 /* Graphics */,
-				FB093ED6156A0E2F00D62B89 /* Duke E Recurement-Info.plist */,
+				FB093ED6156A0E2F00D62B89 /* Experience EventTracking-Info.plist */,
 				FBEA8B45157CB749002EC9D9 /* audioData.txt */,
 				FB093ED7156A0E2F00D62B89 /* InfoPlist.strings */,
 				FB093EDA156A0E2F00D62B89 /* main.m */,
-				FB093EDC156A0E2F00D62B89 /* Duke E Recurement-Prefix.pch */,
+				FB093EDC156A0E2F00D62B89 /* Experience EventTracking-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -593,6 +617,8 @@
 		FBF39C841574A1A5001CA107 /* LoginVC */ = {
 			isa = PBXGroup;
 			children = (
+				5F1F8B9015E655FC00B69959 /* KeychainItemWrapper.h */,
+				5F1F8B9115E655FC00B69959 /* KeychainItemWrapper.m */,
 				FBF39C861574A1C7001CA107 /* LoginVC.h */,
 				FBF39C871574A1C7001CA107 /* LoginVC.m */,
 				FBF39C881574A1C7001CA107 /* LoginVC.xib */,
@@ -640,9 +666,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		FB093EC9156A0E2F00D62B89 /* Duke E Recurement */ = {
+		FB093EC9156A0E2F00D62B89 /* Experience EventTracking */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = FB093EE8156A0E2F00D62B89 /* Build configuration list for PBXNativeTarget "Duke E Recurement" */;
+			buildConfigurationList = FB093EE8156A0E2F00D62B89 /* Build configuration list for PBXNativeTarget "Experience EventTracking" */;
 			buildPhases = (
 				FB093EC6156A0E2F00D62B89 /* Sources */,
 				FB093EC7156A0E2F00D62B89 /* Frameworks */,
@@ -652,9 +678,9 @@
 			);
 			dependencies = (
 			);
-			name = "Duke E Recurement";
+			name = "Experience EventTracking";
 			productName = "Duke E Recurement";
-			productReference = FB093ECA156A0E2F00D62B89 /* Duke E Recurement.app */;
+			productReference = FB093ECA156A0E2F00D62B89 /* Experience EventTracking.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -665,7 +691,7 @@
 			attributes = {
 				LastUpgradeCheck = 0430;
 			};
-			buildConfigurationList = FB093EC4156A0E2F00D62B89 /* Build configuration list for PBXProject "Duke E Recurement" */;
+			buildConfigurationList = FB093EC4156A0E2F00D62B89 /* Build configuration list for PBXProject "Experience EventTracking" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -677,7 +703,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				FB093EC9156A0E2F00D62B89 /* Duke E Recurement */,
+				FB093EC9156A0E2F00D62B89 /* Experience EventTracking */,
 			);
 		};
 /* End PBXProject section */
@@ -727,6 +753,9 @@
 				FBEA8B46157CB749002EC9D9 /* audioData.txt in Resources */,
 				FB20CD71157F6E3500ED6296 /* QRCodeView.xib in Resources */,
 				FB20CD7A157F8CB100ED6296 /* CheckinInputView.xib in Resources */,
+				5F1F9C0E15DEE5B3006A4EDB /* icon-72.png in Resources */,
+				5F1F9C0F15DEE5B3006A4EDB /* icon.png in Resources */,
+				5F1F9C1015DEE5B3006A4EDB /* icon@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -778,6 +807,7 @@
 				FB20CD74157F6E5100ED6296 /* QRCodeView.m in Sources */,
 				FB20CD79157F8CB100ED6296 /* CheckinInputView.m in Sources */,
 				FB20CD7F157F8CFA00ED6296 /* uniMag.m in Sources */,
+				5F1F8B9215E655FC00B69959 /* KeychainItemWrapper.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -801,7 +831,7 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = armv7;
 				CODE_SIGN_IDENTITY = "iPhone Developer: Anupam Das Otoole (U737DBRQJF)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Anupam Das Otoole (U737DBRQJF)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -815,9 +845,8 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
-				PROVISIONING_PROFILE = "6418AB5A-8C4C-418A-A3C5-526FABBB0443";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "6418AB5A-8C4C-418A-A3C5-526FABBB0443";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				PROVISIONING_PROFILE = "";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = 2;
 			};
@@ -829,17 +858,16 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = armv7;
 				CODE_SIGN_IDENTITY = "iPhone Developer: Anupam Das Otoole (U737DBRQJF)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Anupam Das Otoole (U737DBRQJF)";
+				"CODE_SIGN_IDENTITY[sdk=*]" = "iPhone Developer: Anupam Das Otoole (U737DBRQJF)";
 				COPY_PHASE_STRIP = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
-				PROVISIONING_PROFILE = "6418AB5A-8C4C-418A-A3C5-526FABBB0443";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "6418AB5A-8C4C-418A-A3C5-526FABBB0443";
+				PROVISIONING_PROFILE = "";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = 2;
 				VALIDATE_PRODUCT = YES;
@@ -852,12 +880,11 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer: Anupam Das Otoole (U737DBRQJF)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Anupam Das Otoole (U737DBRQJF)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Duke E Recurement/Duke E Recurement-Prefix.pch";
-				INFOPLIST_FILE = "Duke E Recurement/Duke E Recurement-Info.plist";
+				GCC_PREFIX_HEADER = "Duke E Recurement/Experience EventTracking-Prefix.pch";
+				INFOPLIST_FILE = "Duke E Recurement/Experience EventTracking-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "6418AB5A-8C4C-418A-A3C5-526FABBB0443";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "6418AB5A-8C4C-418A-A3C5-526FABBB0443";
+				PRODUCT_NAME = "Experience EventTracking";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -867,11 +894,10 @@
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer: Anupam Das Otoole (U737DBRQJF)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Duke E Recurement/Duke E Recurement-Prefix.pch";
-				INFOPLIST_FILE = "Duke E Recurement/Duke E Recurement-Info.plist";
+				GCC_PREFIX_HEADER = "Duke E Recurement/Experience EventTracking-Prefix.pch";
+				INFOPLIST_FILE = "Duke E Recurement/Experience EventTracking-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "6418AB5A-8C4C-418A-A3C5-526FABBB0443";
+				PRODUCT_NAME = "Experience EventTracking";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -879,7 +905,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		FB093EC4156A0E2F00D62B89 /* Build configuration list for PBXProject "Duke E Recurement" */ = {
+		FB093EC4156A0E2F00D62B89 /* Build configuration list for PBXProject "Experience EventTracking" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				FB093EE6156A0E2F00D62B89 /* Debug */,
@@ -888,7 +914,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		FB093EE8156A0E2F00D62B89 /* Build configuration list for PBXNativeTarget "Duke E Recurement" */ = {
+		FB093EE8156A0E2F00D62B89 /* Build configuration list for PBXNativeTarget "Experience EventTracking" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				FB093EE9156A0E2F00D62B89 /* Debug */,

@@ -13,6 +13,7 @@
 #import "LoginVC.h"
 #import "EventBO.h"
 #import "QRCodeView.h"
+#import "KeychainItemWrapper.h"
 
 @implementation MainScreenVC
 
@@ -85,7 +86,13 @@
 
 -(void)getEventList{
     NSAutoreleasePool *pool = [[NSAutoreleasePool alloc] init];
-	NSDictionary *dict = [BLController getEvents:@"hongbeta" :@"test"];
+    
+    KeychainItemWrapper *keychainItem = [[KeychainItemWrapper alloc] initWithIdentifier:@"ExperienceCSOLogin" accessGroup:nil];
+    NSString *password = [keychainItem objectForKey:kSecValueData];
+    NSString *username = [keychainItem objectForKey:kSecAttrAccount];
+    
+    
+	NSDictionary *dict = [BLController getEvents:username :password];
 	[self performSelectorOnMainThread:@selector(removeDarkView:) withObject:dict waitUntilDone:NO];
 	[pool release];
     
@@ -93,14 +100,24 @@
 
 -(void)getFutureEventList{
     NSAutoreleasePool *pool = [[NSAutoreleasePool alloc] init];
-	NSDictionary *dict = [BLController getFutureEvents:@"hongbeta" :@"test"];
+    
+    KeychainItemWrapper *keychainItem = [[KeychainItemWrapper alloc] initWithIdentifier:@"ExperienceCSOLogin" accessGroup:nil];
+    NSString *password = [keychainItem objectForKey:kSecValueData];
+    NSString *username = [keychainItem objectForKey:kSecAttrAccount];
+    
+	NSDictionary *dict = [BLController getFutureEvents:username :password];
 	[self performSelectorOnMainThread:@selector(removeDarkView:) withObject:dict waitUntilDone:NO];
 	[pool release];
 }
 
 -(void)getPastEventList{
     NSAutoreleasePool *pool = [[NSAutoreleasePool alloc] init];
-	NSDictionary *dict = [BLController getPastEvents:@"hongbeta" :@"test"];
+    
+    KeychainItemWrapper *keychainItem = [[KeychainItemWrapper alloc] initWithIdentifier:@"ExperienceCSOLogin" accessGroup:nil];
+    NSString *password = [keychainItem objectForKey:kSecValueData];
+    NSString *username = [keychainItem objectForKey:kSecAttrAccount];
+    
+	NSDictionary *dict = [BLController getPastEvents:username :password];
 	[self performSelectorOnMainThread:@selector(removeDarkView:) withObject:dict waitUntilDone:NO];
 	[pool release];
 }
