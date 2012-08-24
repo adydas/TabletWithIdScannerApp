@@ -31,8 +31,8 @@
 	}
 	else {
         KeychainItemWrapper *keychainItem = [[KeychainItemWrapper alloc] initWithIdentifier:@"ExperienceCSOLogin" accessGroup:nil];
-        [keychainItem setObject:userEmail forKey:kSecValueData];
-        [keychainItem setObject:userPassword forKey:kSecAttrAccount];
+        [keychainItem setObject:userEmail forKey:kSecAttrAccount];
+        [keychainItem setObject:userPassword forKey:kSecValueData];
 		return [BLController handleResponseForLogin:responseStr];
 	}
 }

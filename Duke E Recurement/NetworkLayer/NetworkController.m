@@ -94,6 +94,9 @@ NetworkController *SharedNetworkInstance;
     
 		ASIHTTPRequest *request = [ASIHTTPRequest requestWithURL:[NSURL URLWithString:[requestUrl stringByAddingPercentEscapesUsingEncoding:NSASCIIStringEncoding]]];
         
+        NSLog(@"Adding Basic Auth Username Token : %@",username);
+        NSLog(@"Adding Basic Auth Password Token : %@",password);
+        
         [request addBasicAuthenticationHeaderWithUsername:username andPassword:password];
         [request applyAuthorizationHeader];
         
