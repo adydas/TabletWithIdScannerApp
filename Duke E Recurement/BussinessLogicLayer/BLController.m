@@ -186,7 +186,7 @@
     
 	NSError *error = nil;
    
-	NSString *requesturl = [NSString stringWithFormat:@"%@/ws/event/%i/attendees",BaseURL,event_id];
+	NSString *requesturl = [NSString stringWithFormat:@"%@/ws/event/0/attendees?eventId=%i",BaseURL,event_id];
     NSLog(@"Base URL :%@",requesturl);
     
 	NSString *jsonString = [NSString stringWithString:@""];
@@ -392,7 +392,20 @@
 		return [NSDictionary dictionaryWithObject:error forKey:Errorkey];
 	}
 	else {
-		return [BLController handleResponseForGetStudentInformationWithQRCodet:responseStr];
+		SBJsonParser *parser = [[SBJsonParser alloc] init];
+        NSDictionary *dict = [parser objectWithString:responseStr];
+        
+        NSDictionary *statusDic=[NSDictionary dictionaryWithObject:[dict objectForKey:@"status"] forKey:FailureKey];
+        NSString *fail = [statusDic objectForKey:@"Failure"];
+        if ([fail isEqualToString:@"failure"]){
+            return [NSDictionary dictionaryWithObject:[dict objectForKey:@"message"] forKey:FailureKey];
+        }
+        
+        NSDictionary *resultDic=[NSDictionary dictionaryWithObject:[dict objectForKey:@"message"] forKey:SuccessKey];
+        return resultDic;	
+        
+        //Replaced function below with the lines above
+        //return [BLController handleResponseForGetStudentInformationWithQRCodet:responseStr];
 	}
 }
 

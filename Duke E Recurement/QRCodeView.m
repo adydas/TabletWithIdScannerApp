@@ -319,8 +319,7 @@ static QRCodeView *sharedInstance;
                                                        delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
 		[alert show];
 		[alert release];
-	}
-	else if ([results objectForKey:Errorkey]) {
+	}else if ([results objectForKey:Errorkey]) {
 		NSError *error=[results objectForKey:Errorkey];
 		UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Error" 
 														message:[error localizedDescription] delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
@@ -329,37 +328,46 @@ static QRCodeView *sharedInstance;
         
         
 		
-	}
-	else
-	{	
-        NSArray *tempArray = [results objectForKey:SuccessKey];
-        if([tempArray count]<=0){
-            UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Error" 
-                                                            message:@"NO Record Found."
-                                                           delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
-            [alert show];
-            [alert release];
-            
-            
-        }//end if
-        else if([tempArray count]==1){
-            AppDelegate *delegate = [[UIApplication sharedApplication]delegate];
-            [delegate addDarkView];
-            StudentBO *tempBO = [tempArray objectAtIndex:0];
-            sID = tempBO.studentID;
-            [self performSelectorInBackground:@selector(performCheckinbyStudentID) withObject:nil];
-            
-            
-        }//end else
-        else  {
-            
-            UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Error" 
-                                                            message:@"Invalid Card" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
-            [alert show];
-            [alert release];
-            
-            
-        }
+	}else{	
+       
+        NSMutableString *serverMessage = [results objectForKey:SuccessKey];
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Success" 
+                                                        message:serverMessage 
+                                                       delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
+		[alert show];
+		[alert release];
+        
+        
+        
+//        NSArray *tempArray = [results objectForKey:SuccessKey];
+//        
+//        if([tempArray count]<=0){
+//            UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Error" 
+//                                                            message:@"No Record Found."
+//                                                           delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
+//            [alert show];
+//            [alert release];
+//            
+//            
+//        }//end if
+//        else if([tempArray count]==1){
+//            AppDelegate *delegate = [[UIApplication sharedApplication]delegate];
+//            [delegate addDarkView];
+//            StudentBO *tempBO = [tempArray objectAtIndex:0];
+//            sID = tempBO.studentID;
+//            [self performSelectorInBackground:@selector(performCheckinbyStudentID) withObject:nil];
+//            
+//            
+//        }//end else
+//        else  {
+//            
+//            UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Error" 
+//                                                            message:@"Invalid Card" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
+//            [alert show];
+//            [alert release];
+//            
+//            
+//        }
         
 	}
 }

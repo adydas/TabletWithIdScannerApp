@@ -34,11 +34,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "Duke E Recurement/BussinessLogicLayer/BLController.m"
-         timestampString = "367727171.083763"
+         timestampString = "367783392.112974"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "464"
-         endingLineNumber = "464"
+         startingLineNumber = "477"
+         endingLineNumber = "477"
          landmarkName = "+getSchoolLogo"
          landmarkType = "5">
       </FileBreakpoint>
@@ -47,11 +47,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "Duke E Recurement/BussinessLogicLayer/BLController.m"
-         timestampString = "367727238.574928"
+         timestampString = "367783392.112974"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "433"
-         endingLineNumber = "433"
+         startingLineNumber = "446"
+         endingLineNumber = "446"
          landmarkName = "+handleResponseForGetStudentInformationWithQRCodet:"
          landmarkType = "5">
       </FileBreakpoint>
@@ -60,12 +60,38 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "Duke E Recurement/QRCodeView.m"
-         timestampString = "367727416.208175"
+         timestampString = "367776273.971996"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "310"
-         endingLineNumber = "310"
+         startingLineNumber = "300"
+         endingLineNumber = "300"
+         landmarkName = "-performGetStudentRequest"
+         landmarkType = "5">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "No"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         filePath = "Duke E Recurement/QRCodeView.m"
+         timestampString = "367777902.142731"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "333"
+         endingLineNumber = "333"
          landmarkName = "-handleCheckinResponseOfQRCode:"
+         landmarkType = "5">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "No"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         filePath = "Duke E Recurement/BussinessLogicLayer/BLController.m"
+         timestampString = "367784085.277916"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "189"
+         endingLineNumber = "189"
+         landmarkName = "+getEventAttendees:"
          landmarkType = "5">
       </FileBreakpoint>
    </FileBreakpoints>
