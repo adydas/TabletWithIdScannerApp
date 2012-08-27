@@ -830,7 +830,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = armv7;
-				CODE_SIGN_IDENTITY = "iPhone Developer: Anupam Das Otoole (U737DBRQJF)";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Experience, Inc";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -857,8 +857,8 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = armv7;
-				CODE_SIGN_IDENTITY = "iPhone Developer: Anupam Das Otoole (U737DBRQJF)";
-				"CODE_SIGN_IDENTITY[sdk=*]" = "iPhone Developer: Anupam Das Otoole (U737DBRQJF)";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Experience, Inc";
+				"CODE_SIGN_IDENTITY[sdk=*]" = "iPhone Distribution: Experience, Inc";
 				COPY_PHASE_STRIP = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
@@ -868,6 +868,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=*]" = "";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = 2;
 				VALIDATE_PRODUCT = YES;
@@ -877,14 +878,15 @@
 		FB093EE9156A0E2F00D62B89 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer: Anupam Das Otoole (U737DBRQJF)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Anupam Das Otoole (U737DBRQJF)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Ady Das (LJ8FMDV5FM)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Ady Das (LJ8FMDV5FM)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Duke E Recurement/Experience EventTracking-Prefix.pch";
 				INFOPLIST_FILE = "Duke E Recurement/Experience EventTracking-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
 				PRODUCT_NAME = "Experience EventTracking";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				PROVISIONING_PROFILE = "CBE40EC5-4747-4FD1-A20D-783DC72906BC";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "CBE40EC5-4747-4FD1-A20D-783DC72906BC";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -892,12 +894,14 @@
 		FB093EEA156A0E2F00D62B89 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer: Anupam Das Otoole (U737DBRQJF)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Ady Das (LJ8FMDV5FM)";
+				"CODE_SIGN_IDENTITY[sdk=*]" = "";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Duke E Recurement/Experience EventTracking-Prefix.pch";
 				INFOPLIST_FILE = "Duke E Recurement/Experience EventTracking-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
 				PRODUCT_NAME = "Experience EventTracking";
+				PROVISIONING_PROFILE = "CBE40EC5-4747-4FD1-A20D-783DC72906BC";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

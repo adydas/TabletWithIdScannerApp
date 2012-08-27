@@ -429,6 +429,12 @@
 			return [NSDictionary dictionaryWithObject:studentArray forKey:SuccessKey];
 		}
 		else {
+            
+            NSString *message = [dict objectForKey:@"message"];
+            if (message != nil) {
+                return [NSDictionary dictionaryWithObject:message forKey:FailureKey];
+            }
+            
 			NSDictionary *resultDic=[NSDictionary dictionaryWithObject:dict forKey:FailureKey];
 			return resultDic;	
 		}

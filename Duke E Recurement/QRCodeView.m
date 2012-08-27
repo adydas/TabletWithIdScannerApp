@@ -85,13 +85,13 @@ static QRCodeView *sharedInstance;
 	[uniReader autoDetect:TRUE];
 	[uniReader promptForConnection:TRUE];
 	
-	powerUniMag = [[UIAlertView alloc] initWithTitle:@"Device Message" 
+	powerUniMag = [[UIAlertView alloc] initWithTitle:@"Experience Scanner" 
 											 message:@"Powering up Device."
 											delegate:self
 								   cancelButtonTitle:nil
 								   otherButtonTitles:nil];
 	
-	swipeAlert = [[UIAlertView alloc] initWithTitle:@"Device Message" 
+	swipeAlert = [[UIAlertView alloc] initWithTitle:@"Experience Scanner" 
 											message:@"Please swipe card."
 										   delegate:self
 								  cancelButtonTitle:@"Cancel"
@@ -115,7 +115,7 @@ static QRCodeView *sharedInstance;
 	[powerUniMag dismissWithClickedButtonIndex:0 animated:FALSE];
 	[swipeAlert dismissWithClickedButtonIndex:1 animated:FALSE];
 	
-	UIAlertView *subPreAuth = [[UIAlertView alloc] initWithTitle:@"Device Error" 
+	UIAlertView *subPreAuth = [[UIAlertView alloc] initWithTitle:@"Scanner Error" 
 														 message:@"Timeout error.  Please verify headphone volume is set to maximum and reconnect the reader again."
 														delegate:self
 											   cancelButtonTitle:@"Ok"
@@ -135,7 +135,7 @@ static QRCodeView *sharedInstance;
 	[powerUniMag dismissWithClickedButtonIndex:0 animated:FALSE];
 	[swipeAlert dismissWithClickedButtonIndex:1 animated:FALSE];
 	
-	UIAlertView *subPreAuth = [[UIAlertView alloc] initWithTitle:@"Device Error" 
+	UIAlertView *subPreAuth = [[UIAlertView alloc] initWithTitle:@"Scanner Error" 
 														 message:@"Timeout error.  Please try to swipe card again."
 														delegate:self
 											   cancelButtonTitle:@"Ok"
@@ -189,12 +189,27 @@ static QRCodeView *sharedInstance;
 	NSString *input = [[NSString alloc] initWithData:data encoding:NSASCIIStringEncoding];
 	NSLog(@"%@",input);
     
+    
+    
     if([input length]>0&&input!=nil){
-        AppDelegate *delegate = [[UIApplication sharedApplication]delegate];
-        [delegate addDarkView];
-        textResponseOfCard = [input retain];
-        NSLog(@"textResponseOfCard%@",textResponseOfCard);
-        [self performSelectorInBackground:@selector(performGetStudentRequest) withObject:nil];
+        
+        if ([input rangeOfString:@"Bad"].location != NSNotFound){
+            UIAlertView *badSwipe = [[UIAlertView alloc] initWithTitle:@"Swipe Error" 
+                                                                 message:@"Please Retry Swipe"
+                                                                delegate:self
+                                                       cancelButtonTitle:@"Ok"
+                                                       otherButtonTitles:nil];
+            [badSwipe show];
+            [badSwipe release];
+        }else{
+            AppDelegate *delegate = [[UIApplication sharedApplication]delegate];
+            [delegate addDarkView];
+            textResponseOfCard = [input retain];
+            NSLog(@"textResponseOfCard%@",textResponseOfCard);
+            [self performSelectorInBackground:@selector(performGetStudentRequest) withObject:nil];
+  
+        }
+        
     }
     
     [input release];
@@ -294,8 +309,13 @@ static QRCodeView *sharedInstance;
     
     if ([results objectForKey:FailureKey]) 
 	{		
-		UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Error" 
-														message:@"No Student Found."
+		NSMutableString *serverMessage = [results objectForKey:FailureKey];
+        [serverMessage appendString:@" \n "];
+        [serverMessage appendString:self.textResponseOfCard];
+        NSLog(@"Message %@", serverMessage);
+        
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"No Record Found" 
+                                                       message:serverMessage 
                                                        delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
 		[alert show];
 		[alert release];
