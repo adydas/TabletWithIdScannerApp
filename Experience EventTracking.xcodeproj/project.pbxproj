@@ -13,6 +13,7 @@
 		5F1F9C0F15DEE5B3006A4EDB /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F1F9C0C15DEE5B3006A4EDB /* icon.png */; };
 		5F1F9C1015DEE5B3006A4EDB /* icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F1F9C0D15DEE5B3006A4EDB /* icon@2x.png */; };
 		A90E1AA115ED82C900BD6E8D /* blue_btn.png in Resources */ = {isa = PBXBuildFile; fileRef = A90E1AA015ED82C900BD6E8D /* blue_btn.png */; };
+		A932085415EE736D0070DC30 /* exp-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = A932085315EE736D0070DC30 /* exp-logo.png */; };
 		FB093ECF156A0E2F00D62B89 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB093ECE156A0E2F00D62B89 /* UIKit.framework */; };
 		FB093ED1156A0E2F00D62B89 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB093ED0156A0E2F00D62B89 /* Foundation.framework */; };
 		FB093ED3156A0E2F00D62B89 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB093ED2156A0E2F00D62B89 /* CoreGraphics.framework */; };
@@ -115,7 +116,8 @@
 		5F1F9C0B15DEE5B3006A4EDB /* icon-72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-72.png"; sourceTree = "<group>"; };
 		5F1F9C0C15DEE5B3006A4EDB /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
 		5F1F9C0D15DEE5B3006A4EDB /* icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon@2x.png"; sourceTree = "<group>"; };
-		A90E1AA015ED82C900BD6E8D /* blue_btn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = blue_btn.png; path = ../../../Desktop/blue_btn.png; sourceTree = "<group>"; };
+		A90E1AA015ED82C900BD6E8D /* blue_btn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = blue_btn.png; path = Graphics/blue_btn.png; sourceTree = "<group>"; };
+		A932085315EE736D0070DC30 /* exp-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "exp-logo.png"; sourceTree = "<group>"; };
 		FB093ECA156A0E2F00D62B89 /* Experience EventTracking.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Experience EventTracking.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB093ECE156A0E2F00D62B89 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		FB093ED0156A0E2F00D62B89 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -641,6 +643,7 @@
 				FBF39C8F1574A61D001CA107 /* check-in-students-up.png */,
 				FBF39C901574A61D001CA107 /* Experience.png */,
 				FBD594E11574F27E0093B016 /* table-view-header.png */,
+				A932085315EE736D0070DC30 /* exp-logo.png */,
 				FBD594E51574F44B0093B016 /* sort-btn.png */,
 				FBCE41E21575DE0300597818 /* white-text-field.png */,
 				FBD594E21574F27E0093B016 /* Table-View-slcted-cell.png */,
@@ -760,6 +763,7 @@
 				5F1F9C0F15DEE5B3006A4EDB /* icon.png in Resources */,
 				5F1F9C1015DEE5B3006A4EDB /* icon@2x.png in Resources */,
 				A90E1AA115ED82C900BD6E8D /* blue_btn.png in Resources */,
+				A932085415EE736D0070DC30 /* exp-logo.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

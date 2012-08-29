@@ -143,7 +143,6 @@
 								<string key="NSFrame">{{33, 176}, {660, 2}}</string>
 								<reference key="NSSuperview" ref="1043552123"/>
 								<reference key="NSWindow"/>
-								<reference key="NSNextKeyView"/>
 								<string key="NSReuseIdentifierKey">_NS:9</string>
 								<bool key="IBUIUserInteractionEnabled">NO</bool>
 								<string key="targetRuntimeIdentifier">IBIPadFramework</string>
@@ -360,7 +359,7 @@
 						<int key="NSvFlags">-2147483356</int>
 						<string key="NSFrame">{{494, 355}, {37, 37}}</string>
 						<reference key="NSSuperview" ref="31050003"/>
-						<reference key="NSNextKeyView"/>
+						<reference key="NSWindow"/>
 						<string key="NSReuseIdentifierKey">_NS:9</string>
 						<bool key="IBUIOpaque">NO</bool>
 						<string key="targetRuntimeIdentifier">IBIPadFramework</string>
@@ -370,6 +369,7 @@
 				</array>
 				<string key="NSFrameSize">{1024, 748}</string>
 				<reference key="NSSuperview"/>
+				<reference key="NSWindow"/>
 				<reference key="NSNextKeyView" ref="344420205"/>
 				<string key="NSReuseIdentifierKey">_NS:9</string>
 				<object class="NSColor" key="IBUIBackgroundColor">
@@ -436,7 +436,7 @@
 						<reference key="IBUINormalTitleShadowColor" ref="223677207"/>
 						<object class="NSCustomResource" key="IBUINormalBackgroundImage">
 							<string key="NSClassName">NSImage</string>
-							<string key="NSResourceName">Experience.png</string>
+							<string key="NSResourceName">exp-logo.png</string>
 						</object>
 						<reference key="IBUIFontDescription" ref="57216368"/>
 						<reference key="IBUIFont" ref="448035809"/>
@@ -620,7 +620,6 @@
 						<string key="NSFrame">{{0, 144}, {306, 607}}</string>
 						<reference key="NSSuperview" ref="766721923"/>
 						<reference key="NSWindow"/>
-						<reference key="NSNextKeyView"/>
 						<string key="NSReuseIdentifierKey">_NS:9</string>
 						<reference key="IBUIBackgroundColor" ref="874849741"/>
 						<bool key="IBUIClipsSubviews">YES</bool>
@@ -1305,7 +1304,6 @@
 		<bool key="IBDocument.PluginDeclaredDependenciesTrackSystemTargetVersion">YES</bool>
 		<int key="IBDocument.defaultPropertyAccessControl">3</int>
 		<dictionary class="NSMutableDictionary" key="IBDocument.LastKnownImageSizes">
-			<string key="Experience.png">{316, 69}</string>
 			<string key="LeftPanelBg.png">{304, 637}</string>
 			<string key="SQC-Enable.png">{265, 76}</string>
 			<string key="Use-Keypad-Enable.png">{265, 76}</string>
@@ -1314,6 +1312,7 @@
 			<string key="blue_btn.png">{136, 56}</string>
 			<string key="check-in-students-pressed.png">{225, 69}</string>
 			<string key="check-in-students-up.png">{225, 69}</string>
+			<string key="exp-logo.png">{276, 70}</string>
 			<string key="left-pannel-top-strip.png">{613, 61}</string>
 			<string key="search-btn.png">{51, 48}</string>
 			<string key="search-field.png">{483, 66}</string>
