@@ -14,6 +14,8 @@
 		5F1F9C1015DEE5B3006A4EDB /* icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F1F9C0D15DEE5B3006A4EDB /* icon@2x.png */; };
 		A90E1AA115ED82C900BD6E8D /* blue_btn.png in Resources */ = {isa = PBXBuildFile; fileRef = A90E1AA015ED82C900BD6E8D /* blue_btn.png */; };
 		A932085415EE736D0070DC30 /* exp-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = A932085315EE736D0070DC30 /* exp-logo.png */; };
+		A97F006015EFFD5F00E18D4D /* tap-to-swipe-up.png in Resources */ = {isa = PBXBuildFile; fileRef = A97F005F15EFFD5F00E18D4D /* tap-to-swipe-up.png */; };
+		A97F006315F0010B00E18D4D /* tap-to-swipe-pressed.png in Resources */ = {isa = PBXBuildFile; fileRef = A97F006215F0010B00E18D4D /* tap-to-swipe-pressed.png */; };
 		FB093ECF156A0E2F00D62B89 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB093ECE156A0E2F00D62B89 /* UIKit.framework */; };
 		FB093ED1156A0E2F00D62B89 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB093ED0156A0E2F00D62B89 /* Foundation.framework */; };
 		FB093ED3156A0E2F00D62B89 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB093ED2156A0E2F00D62B89 /* CoreGraphics.framework */; };
@@ -118,6 +120,8 @@
 		5F1F9C0D15DEE5B3006A4EDB /* icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon@2x.png"; sourceTree = "<group>"; };
 		A90E1AA015ED82C900BD6E8D /* blue_btn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = blue_btn.png; path = Graphics/blue_btn.png; sourceTree = "<group>"; };
 		A932085315EE736D0070DC30 /* exp-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "exp-logo.png"; sourceTree = "<group>"; };
+		A97F005F15EFFD5F00E18D4D /* tap-to-swipe-up.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tap-to-swipe-up.png"; sourceTree = "<group>"; };
+		A97F006215F0010B00E18D4D /* tap-to-swipe-pressed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tap-to-swipe-pressed.png"; sourceTree = "<group>"; };
 		FB093ECA156A0E2F00D62B89 /* Experience EventTracking.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Experience EventTracking.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB093ECE156A0E2F00D62B89 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		FB093ED0156A0E2F00D62B89 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -636,35 +640,37 @@
 			children = (
 				FBF39C8C1574A61D001CA107 /* bg.png */,
 				FBF39C8D1574A61D001CA107 /* blue-devider.png */,
-				FBF39C8E1574A61D001CA107 /* check-in-students-pressed.png */,
-				FBEA8B3E157C8CED002EC9D9 /* swipe-card-pressed.png */,
-				FBEA8B3F157C8CED002EC9D9 /* swipe-card-up.png */,
-				FBCE41E715762C5800597818 /* LeftPanelBg.png */,
-				FBF39C8F1574A61D001CA107 /* check-in-students-up.png */,
-				FBF39C901574A61D001CA107 /* Experience.png */,
-				FBD594E11574F27E0093B016 /* table-view-header.png */,
-				A932085315EE736D0070DC30 /* exp-logo.png */,
-				FBD594E51574F44B0093B016 /* sort-btn.png */,
-				FBCE41E21575DE0300597818 /* white-text-field.png */,
-				FBD594E21574F27E0093B016 /* Table-View-slcted-cell.png */,
+				FB6461091574E0880097780B /* Cell-bg.png */,
 				FBCE41E51575DFAB00597818 /* check-In-btn.png */,
+				FBF39C8E1574A61D001CA107 /* check-in-students-pressed.png */,
+				FBF39C8F1574A61D001CA107 /* check-in-students-up.png */,
+				A932085315EE736D0070DC30 /* exp-logo.png */,
+				FBF39C901574A61D001CA107 /* Experience.png */,
+				FBF39CB01574AE77001CA107 /* Forgot-Password.png */,
 				FBF39C911574A61D001CA107 /* green-arrow.png */,
 				FBF39C921574A61D001CA107 /* left-pannel-devider.png */,
 				FBF39C931574A61D001CA107 /* left-pannel-top-strip.png */,
 				FBF39C941574A61D001CA107 /* left-pannel.png */,
-				FB6461091574E0880097780B /* Cell-bg.png */,
+				FBCE41E715762C5800597818 /* LeftPanelBg.png */,
+				FBF39CB11574AE77001CA107 /* login-Btn.png */,
 				FBF39C951574A61D001CA107 /* search-btn.png */,
 				FBF39C961574A61D001CA107 /* search-field.png */,
+				FBD594E51574F44B0093B016 /* sort-btn.png */,
 				FBF39C971574A61D001CA107 /* SQC-Disable.png */,
 				FBF39C981574A61D001CA107 /* SQC-Enable.png */,
 				FBF39C991574A61D001CA107 /* student-list-pressed.png */,
-				FBF39CB01574AE77001CA107 /* Forgot-Password.png */,
-				FBF39CB11574AE77001CA107 /* login-Btn.png */,
-				FBF39CB21574AE78001CA107 /* txtFieldBg.png */,
 				FBF39C9A1574A61D001CA107 /* student-list-up.png */,
+				FBEA8B3E157C8CED002EC9D9 /* swipe-card-pressed.png */,
+				FBEA8B3F157C8CED002EC9D9 /* swipe-card-up.png */,
+				FBD594E11574F27E0093B016 /* table-view-header.png */,
+				FBD594E21574F27E0093B016 /* Table-View-slcted-cell.png */,
+				A97F006215F0010B00E18D4D /* tap-to-swipe-pressed.png */,
+				A97F005F15EFFD5F00E18D4D /* tap-to-swipe-up.png */,
 				FBF39C9B1574A61D001CA107 /* top-panne.png */,
+				FBF39CB21574AE78001CA107 /* txtFieldBg.png */,
 				FBF39C9C1574A61D001CA107 /* Use-Keypad-disable.png */,
 				FBF39C9D1574A61D001CA107 /* Use-Keypad-Enable.png */,
+				FBCE41E21575DE0300597818 /* white-text-field.png */,
 			);
 			path = Graphics;
 			sourceTree = "<group>";
@@ -764,6 +770,8 @@
 				5F1F9C1015DEE5B3006A4EDB /* icon@2x.png in Resources */,
 				A90E1AA115ED82C900BD6E8D /* blue_btn.png in Resources */,
 				A932085415EE736D0070DC30 /* exp-logo.png in Resources */,
+				A97F006015EFFD5F00E18D4D /* tap-to-swipe-up.png in Resources */,
+				A97F006315F0010B00E18D4D /* tap-to-swipe-pressed.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
