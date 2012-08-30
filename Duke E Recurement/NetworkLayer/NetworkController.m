@@ -41,6 +41,7 @@ NetworkController *SharedNetworkInstance;
     @try{
 		
 		ASIHTTPRequest *request = [ASIHTTPRequest requestWithURL:[NSURL URLWithString:[requestUrl stringByAddingPercentEscapesUsingEncoding:NSASCIIStringEncoding]]];
+        [request setValidatesSecureCertificate:NO];
 		[request setTimeOutSeconds:30];
 		[request setRequestMethod:@"GET"];
 		[request startSynchronous];
@@ -96,7 +97,7 @@ NetworkController *SharedNetworkInstance;
         
         NSLog(@"Adding Basic Auth Username Token : %@",username);
         NSLog(@"Adding Basic Auth Password Token : %@",password);
-        
+        [request setValidatesSecureCertificate:NO];
         [request addBasicAuthenticationHeaderWithUsername:username andPassword:password];
         [request applyAuthorizationHeader];
         

@@ -34,11 +34,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "Duke E Recurement/BussinessLogicLayer/BLController.m"
-         timestampString = "367783392.112974"
+         timestampString = "368034249.746989"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "477"
-         endingLineNumber = "477"
+         startingLineNumber = "480"
+         endingLineNumber = "480"
          landmarkName = "+getSchoolLogo"
          landmarkType = "5">
       </FileBreakpoint>
@@ -47,11 +47,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "Duke E Recurement/BussinessLogicLayer/BLController.m"
-         timestampString = "367783392.112974"
+         timestampString = "368034249.746989"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "446"
-         endingLineNumber = "446"
+         startingLineNumber = "449"
+         endingLineNumber = "449"
          landmarkName = "+handleResponseForGetStudentInformationWithQRCodet:"
          landmarkType = "5">
       </FileBreakpoint>
