@@ -379,8 +379,11 @@
 +(NSDictionary*)getStudentInformationWithQRCode:(NSString*)qrCode withEventID:(int)eID{
     
 	NSError *error = nil;
+    NSString *trimmedString = [qrCode stringByTrimmingCharactersInSet:
+                               [NSCharacterSet whitespaceAndNewlineCharacterSet]];
+    NSLog(@"Scanned Code:%@", trimmedString);
     
-    NSString *requesturl = [NSString stringWithFormat:@"%@/ws/stu/cardCode/%i?code=;?%@",BaseURL,eID,qrCode];
+    NSString *requesturl = [NSString stringWithFormat:@"%@/ws/stu/cardCode/%i?code=;?%@",BaseURL,eID,trimmedString];
 	
     NSLog(@"Base URL :%@",requesturl);
     
