@@ -318,6 +318,7 @@
 						<int key="NSvFlags">292</int>
 						<string key="NSFrame">{{234, 307}, {250, 62}}</string>
 						<reference key="NSSuperview" ref="867410586"/>
+						<reference key="NSNextKeyView"/>
 						<string key="NSReuseIdentifierKey">_NS:9</string>
 						<bool key="IBUIOpaque">NO</bool>
 						<string key="targetRuntimeIdentifier">IBIPadFramework</string>
@@ -526,7 +527,7 @@
 			<string key="Use-Keypad-disable.png">{265, 76}</string>
 			<string key="bg.png">{2048, 1496}</string>
 			<string key="blue-devider.png">{1319, 3}</string>
-			<string key="btn-swipe-disabled.png">{16, 16}</string>
+			<string key="btn-swipe-disabled.png">{265, 76}</string>
 			<string key="tap-to-swipe-pressed.png">{375, 94}</string>
 			<string key="tap-to-swipe-up.png">{375, 94}</string>
 		</dictionary>
