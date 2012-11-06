@@ -17,6 +17,10 @@
 		5F2F3F4E15F0482E00CB96BC /* Default-Portrait~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F2F3F4C15F0482100CB96BC /* Default-Portrait~ipad.png */; };
 		A90E1AA115ED82C900BD6E8D /* blue_btn.png in Resources */ = {isa = PBXBuildFile; fileRef = A90E1AA015ED82C900BD6E8D /* blue_btn.png */; };
 		A932085415EE736D0070DC30 /* exp-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = A932085315EE736D0070DC30 /* exp-logo.png */; };
+		A96B7FC71649B73400113299 /* btn-use-keypad.png in Resources */ = {isa = PBXBuildFile; fileRef = A96B7FC51649B73400113299 /* btn-use-keypad.png */; };
+		A96B7FC81649B73400113299 /* btn-swipe-card.png in Resources */ = {isa = PBXBuildFile; fileRef = A96B7FC61649B73400113299 /* btn-swipe-card.png */; };
+		A96B7FCB1649BCAC00113299 /* btn-swipe-card-disabled.png in Resources */ = {isa = PBXBuildFile; fileRef = A96B7FC91649BCAC00113299 /* btn-swipe-card-disabled.png */; };
+		A96B7FCC1649BCAC00113299 /* btn-use-keypad-disabled.png in Resources */ = {isa = PBXBuildFile; fileRef = A96B7FCA1649BCAC00113299 /* btn-use-keypad-disabled.png */; };
 		A97F006015EFFD5F00E18D4D /* tap-to-swipe-up.png in Resources */ = {isa = PBXBuildFile; fileRef = A97F005F15EFFD5F00E18D4D /* tap-to-swipe-up.png */; };
 		A97F006315F0010B00E18D4D /* tap-to-swipe-pressed.png in Resources */ = {isa = PBXBuildFile; fileRef = A97F006215F0010B00E18D4D /* tap-to-swipe-pressed.png */; };
 		A9E5458F1615F1660071FE03 /* btn-swipe-enabled.png in Resources */ = {isa = PBXBuildFile; fileRef = A9E5458D1615F1660071FE03 /* btn-swipe-enabled.png */; };
@@ -128,6 +132,10 @@
 		5F2F3F4C15F0482100CB96BC /* Default-Portrait~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Portrait~ipad.png"; sourceTree = "<group>"; };
 		A90E1AA015ED82C900BD6E8D /* blue_btn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = blue_btn.png; path = Graphics/blue_btn.png; sourceTree = "<group>"; };
 		A932085315EE736D0070DC30 /* exp-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "exp-logo.png"; sourceTree = "<group>"; };
+		A96B7FC51649B73400113299 /* btn-use-keypad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "btn-use-keypad.png"; sourceTree = "<group>"; };
+		A96B7FC61649B73400113299 /* btn-swipe-card.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "btn-swipe-card.png"; sourceTree = "<group>"; };
+		A96B7FC91649BCAC00113299 /* btn-swipe-card-disabled.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "btn-swipe-card-disabled.png"; sourceTree = "<group>"; };
+		A96B7FCA1649BCAC00113299 /* btn-use-keypad-disabled.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "btn-use-keypad-disabled.png"; sourceTree = "<group>"; };
 		A97F005F15EFFD5F00E18D4D /* tap-to-swipe-up.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tap-to-swipe-up.png"; sourceTree = "<group>"; };
 		A97F006215F0010B00E18D4D /* tap-to-swipe-pressed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tap-to-swipe-pressed.png"; sourceTree = "<group>"; };
 		A9E5458D1615F1660071FE03 /* btn-swipe-enabled.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "btn-swipe-enabled.png"; sourceTree = "<group>"; };
@@ -651,6 +659,10 @@
 		FBF39C8B1574A61D001CA107 /* Graphics */ = {
 			isa = PBXGroup;
 			children = (
+				A96B7FC91649BCAC00113299 /* btn-swipe-card-disabled.png */,
+				A96B7FCA1649BCAC00113299 /* btn-use-keypad-disabled.png */,
+				A96B7FC51649B73400113299 /* btn-use-keypad.png */,
+				A96B7FC61649B73400113299 /* btn-swipe-card.png */,
 				FBF39C8C1574A61D001CA107 /* bg.png */,
 				FBF39C8D1574A61D001CA107 /* blue-devider.png */,
 				FB6461091574E0880097780B /* Cell-bg.png */,
@@ -792,6 +804,10 @@
 				5F2F3F4E15F0482E00CB96BC /* Default-Portrait~ipad.png in Resources */,
 				A9E5458F1615F1660071FE03 /* btn-swipe-enabled.png in Resources */,
 				A9E545901615F1660071FE03 /* btn-swipe-disabled.png in Resources */,
+				A96B7FC71649B73400113299 /* btn-use-keypad.png in Resources */,
+				A96B7FC81649B73400113299 /* btn-swipe-card.png in Resources */,
+				A96B7FCB1649BCAC00113299 /* btn-swipe-card-disabled.png in Resources */,
+				A96B7FCC1649BCAC00113299 /* btn-use-keypad-disabled.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

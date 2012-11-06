@@ -2,13 +2,13 @@
 <archive type="com.apple.InterfaceBuilder3.CocoaTouch.iPad.XIB" version="8.00">
 	<data>
 		<int key="IBDocument.SystemTarget">1536</int>
-		<string key="IBDocument.SystemVersion">12C54</string>
-		<string key="IBDocument.InterfaceBuilderVersion">2840</string>
+		<string key="IBDocument.SystemVersion">12C60</string>
+		<string key="IBDocument.InterfaceBuilderVersion">2843</string>
 		<string key="IBDocument.AppKitVersion">1187.34</string>
 		<string key="IBDocument.HIToolboxVersion">625.00</string>
 		<object class="NSMutableDictionary" key="IBDocument.PluginVersions">
 			<string key="NS.key.0">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
-			<string key="NS.object.0">1926</string>
+			<string key="NS.object.0">1929</string>
 		</object>
 		<array key="IBDocument.IntegratedClassDependencies">
 			<string>IBProxyObject</string>
@@ -42,6 +42,7 @@
 						<int key="NSvFlags">274</int>
 						<string key="NSFrameSize">{718, 643}</string>
 						<reference key="NSSuperview" ref="867410586"/>
+						<reference key="NSWindow"/>
 						<reference key="NSNextKeyView" ref="812586687"/>
 						<string key="NSReuseIdentifierKey">_NS:9</string>
 						<bool key="IBUIUserInteractionEnabled">NO</bool>
@@ -56,6 +57,7 @@
 						<int key="NSvFlags">292</int>
 						<string key="NSFrame">{{29, 148}, {660, 2}}</string>
 						<reference key="NSSuperview" ref="867410586"/>
+						<reference key="NSWindow"/>
 						<reference key="NSNextKeyView" ref="870231682"/>
 						<string key="NSReuseIdentifierKey">_NS:9</string>
 						<bool key="IBUIUserInteractionEnabled">NO</bool>
@@ -68,8 +70,9 @@
 					<object class="IBUIButton" id="1062376089">
 						<reference key="NSNextResponder" ref="867410586"/>
 						<int key="NSvFlags">292</int>
-						<string key="NSFrame">{{40, 91}, {133, 38}}</string>
+						<string key="NSFrame">{{40, 88}, {187, 44}}</string>
 						<reference key="NSSuperview" ref="867410586"/>
+						<reference key="NSWindow"/>
 						<reference key="NSNextKeyView" ref="777380888"/>
 						<string key="NSReuseIdentifierKey">_NS:9</string>
 						<bool key="IBUIOpaque">NO</bool>
@@ -88,11 +91,10 @@
 							<int key="NSColorSpace">3</int>
 							<bytes key="NSWhite">MC41AA</bytes>
 						</object>
-						<object class="NSCustomResource" key="IBUINormalImage" id="670573932">
+						<object class="NSCustomResource" key="IBUINormalImage">
 							<string key="NSClassName">NSImage</string>
-							<string key="NSResourceName">Use-Keypad-disable.png</string>
+							<string key="NSResourceName">btn-use-keypad-disabled.png</string>
 						</object>
-						<reference key="IBUIDisabledBackgroundImage" ref="670573932"/>
 						<object class="IBUIFontDescription" key="IBUIFontDescription" id="633318514">
 							<int key="type">2</int>
 							<double key="pointSize">15</double>
@@ -106,8 +108,9 @@
 					<object class="IBUIButton" id="32036500">
 						<reference key="NSNextResponder" ref="867410586"/>
 						<int key="NSvFlags">292</int>
-						<string key="NSFrame">{{213, 91}, {133, 38}}</string>
+						<string key="NSFrame">{{295, 88}, {187, 44}}</string>
 						<reference key="NSSuperview" ref="867410586"/>
+						<reference key="NSWindow"/>
 						<reference key="NSNextKeyView" ref="690269769"/>
 						<string key="NSReuseIdentifierKey">_NS:9</string>
 						<bool key="IBUIOpaque">NO</bool>
@@ -120,19 +123,19 @@
 							<bytes key="NSRGB">MC4xOTYwNzg0MzQ2IDAuMzA5ODAzOTMyOSAwLjUyMTU2ODY1NgA</bytes>
 						</object>
 						<reference key="IBUINormalTitleShadowColor" ref="473817714"/>
-						<object class="NSCustomResource" key="IBUINormalImage" id="772712551">
+						<object class="NSCustomResource" key="IBUINormalImage">
 							<string key="NSClassName">NSImage</string>
-							<string key="NSResourceName">btn-swipe-disabled.png</string>
+							<string key="NSResourceName">btn-swipe-card-disabled.png</string>
 						</object>
-						<reference key="IBUIDisabledBackgroundImage" ref="772712551"/>
 						<reference key="IBUIFontDescription" ref="633318514"/>
 						<reference key="IBUIFont" ref="374444114"/>
 					</object>
 					<object class="IBUILabel" id="777380888">
 						<reference key="NSNextResponder" ref="867410586"/>
 						<int key="NSvFlags">292</int>
-						<string key="NSFrame">{{189, 93}, {14, 33}}</string>
+						<string key="NSFrame">{{250, 93}, {22, 33}}</string>
 						<reference key="NSSuperview" ref="867410586"/>
+						<reference key="NSWindow"/>
 						<reference key="NSNextKeyView" ref="32036500"/>
 						<string key="NSReuseIdentifierKey">_NS:9</string>
 						<bool key="IBUIOpaque">NO</bool>
@@ -140,24 +143,26 @@
 						<int key="IBUIContentMode">7</int>
 						<bool key="IBUIUserInteractionEnabled">NO</bool>
 						<string key="targetRuntimeIdentifier">IBIPadFramework</string>
-						<string key="IBUIText">/</string>
+						<string key="IBUIText">or</string>
 						<object class="NSColor" key="IBUITextColor" id="221368293">
 							<int key="NSColorSpace">1</int>
 							<bytes key="NSRGB">MCAwIDAAA</bytes>
 							<string key="IBUIColorCocoaTouchKeyPath">darkTextColor</string>
 						</object>
 						<nil key="IBUIHighlightedColor"/>
+						<reference key="IBUIShadowColor" ref="388577213"/>
+						<string key="IBUIShadowOffset">{0, 2}</string>
 						<int key="IBUIBaselineAdjustment">0</int>
 						<float key="IBUIMinimumFontSize">10</float>
 						<object class="IBUIFontDescription" key="IBUIFontDescription">
 							<string key="name">Helvetica</string>
 							<string key="family">Helvetica</string>
 							<int key="traits">0</int>
-							<double key="pointSize">30</double>
+							<double key="pointSize">24</double>
 						</object>
 						<object class="NSFont" key="IBUIFont">
 							<string key="NSName">Helvetica</string>
-							<double key="NSSize">30</double>
+							<double key="NSSize">24</double>
 							<int key="NSfFlags">16</int>
 						</object>
 					</object>
@@ -166,6 +171,7 @@
 						<int key="NSvFlags">292</int>
 						<string key="NSFrame">{{33, 2}, {169, 51}}</string>
 						<reference key="NSSuperview" ref="867410586"/>
+						<reference key="NSWindow"/>
 						<reference key="NSNextKeyView" ref="980955066"/>
 						<string key="NSReuseIdentifierKey">_NS:9</string>
 						<bool key="IBUIOpaque">NO</bool>
@@ -195,6 +201,7 @@
 						<int key="NSvFlags">292</int>
 						<string key="NSFrame">{{213, 2}, {480, 51}}</string>
 						<reference key="NSSuperview" ref="867410586"/>
+						<reference key="NSWindow"/>
 						<reference key="NSNextKeyView" ref="635707322"/>
 						<string key="NSReuseIdentifierKey">_NS:9</string>
 						<bool key="IBUIOpaque">NO</bool>
@@ -217,6 +224,7 @@
 						<int key="NSvFlags">292</int>
 						<string key="NSFrame">{{40, 54}, {370, 21}}</string>
 						<reference key="NSSuperview" ref="867410586"/>
+						<reference key="NSWindow"/>
 						<reference key="NSNextKeyView" ref="1062376089"/>
 						<string key="NSReuseIdentifierKey">_NS:9</string>
 						<bool key="IBUIOpaque">NO</bool>
@@ -246,6 +254,7 @@
 						<int key="NSvFlags">292</int>
 						<string key="NSFrame">{{33, 195}, {660, 90}}</string>
 						<reference key="NSSuperview" ref="867410586"/>
+						<reference key="NSWindow"/>
 						<reference key="NSNextKeyView" ref="126765876"/>
 						<string key="NSReuseIdentifierKey">_NS:9</string>
 						<bool key="IBUIOpaque">NO</bool>
@@ -277,6 +286,7 @@
 						<int key="NSvFlags">292</int>
 						<string key="NSFrame">{{33, 175}, {660, 29}}</string>
 						<reference key="NSSuperview" ref="867410586"/>
+						<reference key="NSWindow"/>
 						<reference key="NSNextKeyView" ref="422992430"/>
 						<string key="NSReuseIdentifierKey">_NS:9</string>
 						<reference key="IBUIBackgroundColor" ref="221368293"/>
@@ -318,6 +328,7 @@
 						<int key="NSvFlags">292</int>
 						<string key="NSFrame">{{234, 307}, {250, 62}}</string>
 						<reference key="NSSuperview" ref="867410586"/>
+						<reference key="NSWindow"/>
 						<reference key="NSNextKeyView"/>
 						<string key="NSReuseIdentifierKey">_NS:9</string>
 						<bool key="IBUIOpaque">NO</bool>
@@ -341,6 +352,7 @@
 				</array>
 				<string key="NSFrameSize">{718, 643}</string>
 				<reference key="NSSuperview"/>
+				<reference key="NSWindow"/>
 				<reference key="NSNextKeyView" ref="873169511"/>
 				<string key="NSReuseIdentifierKey">_NS:9</string>
 				<object class="NSColor" key="IBUIBackgroundColor">
@@ -506,11 +518,11 @@
 				<real value="1" key="3.IBUIButtonInspectorSelectedStateConfigurationMetadataKey"/>
 				<string key="5.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 				<string key="6.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
-				<real value="0.0" key="6.IBUIButtonInspectorSelectedStateConfigurationMetadataKey"/>
+				<real value="3" key="6.IBUIButtonInspectorSelectedStateConfigurationMetadataKey"/>
 				<string key="7.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 				<string key="8.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 				<string key="9.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
-				<real value="0.0" key="9.IBUIButtonInspectorSelectedStateConfigurationMetadataKey"/>
+				<real value="3" key="9.IBUIButtonInspectorSelectedStateConfigurationMetadataKey"/>
 			</dictionary>
 			<dictionary class="NSMutableDictionary" key="unlocalizedProperties"/>
 			<nil key="activeLocalization"/>
@@ -518,19 +530,78 @@
 			<nil key="sourceID"/>
 			<int key="maxID">21</int>
 		</object>
-		<object class="IBClassDescriber" key="IBDocument.Classes"/>
+		<object class="IBClassDescriber" key="IBDocument.Classes">
+			<array class="NSMutableArray" key="referencedPartialClassDescriptions">
+				<object class="IBPartialClassDescription">
+					<string key="className">QRCodeView</string>
+					<string key="superclassName">UIView</string>
+					<dictionary class="NSMutableDictionary" key="actions">
+						<string key="playTone">id</string>
+						<string key="swipeCard">id</string>
+					</dictionary>
+					<dictionary class="NSMutableDictionary" key="actionInfosByName">
+						<object class="IBActionInfo" key="playTone">
+							<string key="name">playTone</string>
+							<string key="candidateClassName">id</string>
+						</object>
+						<object class="IBActionInfo" key="swipeCard">
+							<string key="name">swipeCard</string>
+							<string key="candidateClassName">id</string>
+						</object>
+					</dictionary>
+					<dictionary class="NSMutableDictionary" key="outlets">
+						<string key="connectedLabel">UILabel</string>
+						<string key="eventNameLbl">UILabel</string>
+						<string key="hexResponse">UITextView</string>
+						<string key="keypadBtn">UIButton</string>
+						<string key="qrCodeBtn">UIButton</string>
+						<string key="textResponse">UITextView</string>
+					</dictionary>
+					<dictionary class="NSMutableDictionary" key="toOneOutletInfosByName">
+						<object class="IBToOneOutletInfo" key="connectedLabel">
+							<string key="name">connectedLabel</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="eventNameLbl">
+							<string key="name">eventNameLbl</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="hexResponse">
+							<string key="name">hexResponse</string>
+							<string key="candidateClassName">UITextView</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="keypadBtn">
+							<string key="name">keypadBtn</string>
+							<string key="candidateClassName">UIButton</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="qrCodeBtn">
+							<string key="name">qrCodeBtn</string>
+							<string key="candidateClassName">UIButton</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="textResponse">
+							<string key="name">textResponse</string>
+							<string key="candidateClassName">UITextView</string>
+						</object>
+					</dictionary>
+					<object class="IBClassDescriptionSource" key="sourceIdentifier">
+						<string key="majorKey">IBProjectSource</string>
+						<string key="minorKey">./Classes/QRCodeView.h</string>
+					</object>
+				</object>
+			</array>
+		</object>
 		<int key="IBDocument.localizationMode">0</int>
 		<string key="IBDocument.TargetRuntimeIdentifier">IBIPadFramework</string>
 		<bool key="IBDocument.PluginDeclaredDependenciesTrackSystemTargetVersion">YES</bool>
 		<int key="IBDocument.defaultPropertyAccessControl">3</int>
 		<dictionary class="NSMutableDictionary" key="IBDocument.LastKnownImageSizes">
-			<string key="Use-Keypad-disable.png">{265, 76}</string>
 			<string key="bg.png">{2048, 1496}</string>
 			<string key="blue-devider.png">{1319, 3}</string>
-			<string key="btn-swipe-disabled.png">{265, 76}</string>
+			<string key="btn-swipe-card-disabled.png">{374, 88}</string>
+			<string key="btn-use-keypad-disabled.png">{374, 88}</string>
 			<string key="tap-to-swipe-pressed.png">{375, 94}</string>
 			<string key="tap-to-swipe-up.png">{375, 94}</string>
 		</dictionary>
-		<string key="IBCocoaTouchPluginVersion">1926</string>
+		<string key="IBCocoaTouchPluginVersion">1929</string>
 	</data>
 </archive>
