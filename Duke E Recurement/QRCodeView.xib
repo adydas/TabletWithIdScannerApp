@@ -144,10 +144,9 @@
 						<bool key="IBUIUserInteractionEnabled">NO</bool>
 						<string key="targetRuntimeIdentifier">IBIPadFramework</string>
 						<string key="IBUIText">or</string>
-						<object class="NSColor" key="IBUITextColor" id="221368293">
+						<object class="NSColor" key="IBUITextColor">
 							<int key="NSColorSpace">1</int>
-							<bytes key="NSRGB">MCAwIDAAA</bytes>
-							<string key="IBUIColorCocoaTouchKeyPath">darkTextColor</string>
+							<bytes key="NSRGB">MC40MzkyMTU2ODYzIDAuNDM5MjE1Njg2MyAwLjQzOTIxNTY4NjMAA</bytes>
 						</object>
 						<nil key="IBUIHighlightedColor"/>
 						<reference key="IBUIShadowColor" ref="388577213"/>
@@ -180,7 +179,11 @@
 						<bool key="IBUIUserInteractionEnabled">NO</bool>
 						<string key="targetRuntimeIdentifier">IBIPadFramework</string>
 						<string key="IBUIText">Check In Student to:</string>
-						<reference key="IBUITextColor" ref="221368293"/>
+						<object class="NSColor" key="IBUITextColor" id="221368293">
+							<int key="NSColorSpace">1</int>
+							<bytes key="NSRGB">MCAwIDAAA</bytes>
+							<string key="IBUIColorCocoaTouchKeyPath">darkTextColor</string>
+						</object>
 						<nil key="IBUIHighlightedColor"/>
 						<int key="IBUIBaselineAdjustment">0</int>
 						<float key="IBUIMinimumFontSize">10</float>
@@ -326,10 +329,9 @@
 					<object class="IBUIButton" id="126765876">
 						<reference key="NSNextResponder" ref="867410586"/>
 						<int key="NSvFlags">292</int>
-						<string key="NSFrame">{{234, 307}, {250, 62}}</string>
+						<string key="NSFrame">{{151, 307}, {425, 92}}</string>
 						<reference key="NSSuperview" ref="867410586"/>
 						<reference key="NSWindow"/>
-						<reference key="NSNextKeyView"/>
 						<string key="NSReuseIdentifierKey">_NS:9</string>
 						<bool key="IBUIOpaque">NO</bool>
 						<string key="targetRuntimeIdentifier">IBIPadFramework</string>
@@ -515,7 +517,7 @@
 				<string key="2.CustomClassName">QRCodeView</string>
 				<string key="2.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 				<string key="3.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
-				<real value="1" key="3.IBUIButtonInspectorSelectedStateConfigurationMetadataKey"/>
+				<real value="0.0" key="3.IBUIButtonInspectorSelectedStateConfigurationMetadataKey"/>
 				<string key="5.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 				<string key="6.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 				<real value="3" key="6.IBUIButtonInspectorSelectedStateConfigurationMetadataKey"/>
@@ -599,8 +601,8 @@
 			<string key="blue-devider.png">{1319, 3}</string>
 			<string key="btn-swipe-card-disabled.png">{374, 88}</string>
 			<string key="btn-use-keypad-disabled.png">{374, 88}</string>
-			<string key="tap-to-swipe-pressed.png">{375, 94}</string>
-			<string key="tap-to-swipe-up.png">{375, 94}</string>
+			<string key="tap-to-swipe-pressed.png">{425, 92}</string>
+			<string key="tap-to-swipe-up.png">{425, 92}</string>
 		</dictionary>
 		<string key="IBCocoaTouchPluginVersion">1929</string>
 	</data>

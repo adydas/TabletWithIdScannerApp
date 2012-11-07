@@ -16,6 +16,8 @@
 		5F2F3F4B15F0481700CB96BC /* icon-72.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F2F3F4A15F0481700CB96BC /* icon-72.png */; };
 		5F2F3F4E15F0482E00CB96BC /* Default-Portrait~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F2F3F4C15F0482100CB96BC /* Default-Portrait~ipad.png */; };
 		A90E1AA115ED82C900BD6E8D /* blue_btn.png in Resources */ = {isa = PBXBuildFile; fileRef = A90E1AA015ED82C900BD6E8D /* blue_btn.png */; };
+		A92434AE164AD3E7008075CC /* checkin-pressed.png in Resources */ = {isa = PBXBuildFile; fileRef = A92434AC164AD3E7008075CC /* checkin-pressed.png */; };
+		A92434AF164AD3E7008075CC /* checkin-up.png in Resources */ = {isa = PBXBuildFile; fileRef = A92434AD164AD3E7008075CC /* checkin-up.png */; };
 		A932085415EE736D0070DC30 /* exp-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = A932085315EE736D0070DC30 /* exp-logo.png */; };
 		A96B7FC71649B73400113299 /* btn-use-keypad.png in Resources */ = {isa = PBXBuildFile; fileRef = A96B7FC51649B73400113299 /* btn-use-keypad.png */; };
 		A96B7FC81649B73400113299 /* btn-swipe-card.png in Resources */ = {isa = PBXBuildFile; fileRef = A96B7FC61649B73400113299 /* btn-swipe-card.png */; };
@@ -131,6 +133,8 @@
 		5F2F3F4A15F0481700CB96BC /* icon-72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-72.png"; sourceTree = "<group>"; };
 		5F2F3F4C15F0482100CB96BC /* Default-Portrait~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Portrait~ipad.png"; sourceTree = "<group>"; };
 		A90E1AA015ED82C900BD6E8D /* blue_btn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = blue_btn.png; path = Graphics/blue_btn.png; sourceTree = "<group>"; };
+		A92434AC164AD3E7008075CC /* checkin-pressed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "checkin-pressed.png"; sourceTree = "<group>"; };
+		A92434AD164AD3E7008075CC /* checkin-up.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "checkin-up.png"; sourceTree = "<group>"; };
 		A932085315EE736D0070DC30 /* exp-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "exp-logo.png"; sourceTree = "<group>"; };
 		A96B7FC51649B73400113299 /* btn-use-keypad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "btn-use-keypad.png"; sourceTree = "<group>"; };
 		A96B7FC61649B73400113299 /* btn-swipe-card.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "btn-swipe-card.png"; sourceTree = "<group>"; };
@@ -659,6 +663,8 @@
 		FBF39C8B1574A61D001CA107 /* Graphics */ = {
 			isa = PBXGroup;
 			children = (
+				A92434AC164AD3E7008075CC /* checkin-pressed.png */,
+				A92434AD164AD3E7008075CC /* checkin-up.png */,
 				A96B7FC91649BCAC00113299 /* btn-swipe-card-disabled.png */,
 				A96B7FCA1649BCAC00113299 /* btn-use-keypad-disabled.png */,
 				A96B7FC51649B73400113299 /* btn-use-keypad.png */,
@@ -808,6 +814,8 @@
 				A96B7FC81649B73400113299 /* btn-swipe-card.png in Resources */,
 				A96B7FCB1649BCAC00113299 /* btn-swipe-card-disabled.png in Resources */,
 				A96B7FCC1649BCAC00113299 /* btn-use-keypad-disabled.png in Resources */,
+				A92434AE164AD3E7008075CC /* checkin-pressed.png in Resources */,
+				A92434AF164AD3E7008075CC /* checkin-up.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

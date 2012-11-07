@@ -424,7 +424,7 @@
 									<object class="IBUIButton" id="652949741">
 										<reference key="NSNextResponder" ref="990665719"/>
 										<int key="NSvFlags">292</int>
-										<string key="NSFrame">{{496, 237}, {115, 47}}</string>
+										<string key="NSFrame">{{531, 237}, {135, 46}}</string>
 										<reference key="NSSuperview" ref="990665719"/>
 										<reference key="NSWindow"/>
 										<reference key="NSNextKeyView" ref="194531906"/>
@@ -439,9 +439,13 @@
 											<bytes key="NSRGB">MC4xOTYwNzg0MzQ2IDAuMzA5ODAzOTMyOSAwLjUyMTU2ODY1NgA</bytes>
 										</object>
 										<reference key="IBUINormalTitleShadowColor" ref="610810968"/>
+										<object class="NSCustomResource" key="IBUIHighlightedImage">
+											<string key="NSClassName">NSImage</string>
+											<string key="NSResourceName">checkin-pressed.png</string>
+										</object>
 										<object class="NSCustomResource" key="IBUINormalImage">
 											<string key="NSClassName">NSImage</string>
-											<string key="NSResourceName">check-In-btn.png</string>
+											<string key="NSResourceName">checkin-up.png</string>
 										</object>
 										<reference key="IBUIFontDescription" ref="532265043"/>
 										<reference key="IBUIFont" ref="950360585"/>
@@ -720,6 +724,7 @@
 				<string key="16.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 				<string key="17.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 				<string key="19.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
+				<real value="1" key="19.IBUIButtonInspectorSelectedStateConfigurationMetadataKey"/>
 				<string key="2.CustomClassName">CheckinInputView</string>
 				<string key="2.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 				<string key="3.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
@@ -820,7 +825,8 @@
 			<string key="btn-swipe-card.png">{374, 88}</string>
 			<string key="btn-use-keypad-disabled.png">{374, 88}</string>
 			<string key="btn-use-keypad.png">{374, 88}</string>
-			<string key="check-In-btn.png">{229, 94}</string>
+			<string key="checkin-pressed.png">{270, 92}</string>
+			<string key="checkin-up.png">{270, 92}</string>
 			<string key="white-text-field.png">{372, 65}</string>
 		</dictionary>
 		<string key="IBCocoaTouchPluginVersion">1929</string>
