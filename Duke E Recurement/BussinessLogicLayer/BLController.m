@@ -330,7 +330,7 @@
     
 	NSError *error = nil;
     
-    NSString *requesturl = [NSString stringWithFormat:@"%@/ws/stu/checkin/%i?uid=%i",BaseURL,eventID,userId];
+    NSString *requesturl = [NSString stringWithFormat:@"%@/ws/stu/checkin/%i?sid=%i",BaseURL,eventID,userId];
  
     if(userId==0){
         requesturl = [NSString stringWithFormat:@"%@/ws/stu/checkin/%i?email=%@",BaseURL,eventID,email];
