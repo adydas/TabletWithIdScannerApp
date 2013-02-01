@@ -93,12 +93,12 @@
     
     for(int i = 0; i <[self.attendeesArray count];i++){
         StudentBO *tempBO = [self.attendeesArray objectAtIndex:i];
-        if(tempBO.studentID==tempBtn.tag){
+        if([tempBO.studentID isEqualToString:[NSString stringWithFormat:@"%d", tempBtn.tag]]){
             currentSelectedIndex = i;
             break;
         }
     }
-    sID = tempBtn.tag;
+    sID = [NSString stringWithFormat:@"%d", tempBtn.tag];
     
     [self performSelectorInBackground:@selector(performCheckinWithStudentID) withObject:nil];
     

@@ -64,7 +64,7 @@
     [delegate addDarkView];
 
     if([studentID length]>0){
-        sID = [[studentIDTxt text] intValue];
+        sID = [studentIDTxt text];
         [self performSelectorInBackground:@selector(performCheckinbyStudentID) withObject:nil];
     }
     else if([studentEmail length]>0) {
@@ -94,7 +94,7 @@
     
     NSAutoreleasePool *pool = [[NSAutoreleasePool alloc] init];
     
-    NSLog(@"student id%i",sID);
+    NSLog(@"student id%@",sID);
 	NSDictionary *dict = [BLController checkInStudent:[eventID intValue] withUserID:sID andEmailAddress:@""];
 	[self performSelectorOnMainThread:@selector(removeOverLay:) withObject:dict waitUntilDone:NO];
 	[pool release];

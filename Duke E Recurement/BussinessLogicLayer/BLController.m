@@ -74,7 +74,7 @@
     NSString *requesturl = [NSString stringWithFormat:@"%@/ws/events?mode=tdy",BaseURL];
     NSLog(@"Base URL :%@",requesturl);
     
-	NSString *jsonString = [NSString stringWithString:@""];
+	NSString *jsonString = @"";
     
     NSLog(@"JSON String : %@",jsonString);
     
@@ -141,7 +141,7 @@
     NSString *requesturl = [NSString stringWithFormat:@"%@/ws/events",BaseURL];
     NSLog(@"Base URL :%@",requesturl);
     
-	NSString *jsonString = [NSString stringWithString:@""];
+	NSString *jsonString = @"";
     
     NSLog(@"JSON String : %@",jsonString);
     
@@ -163,7 +163,7 @@
     NSString *requesturl = [NSString stringWithFormat:@"%@/ws/events?mode=pst",BaseURL];
     NSLog(@"Base URL :%@",requesturl);
     
-	NSString *jsonString = [NSString stringWithString:@""];
+	NSString *jsonString = @"";
     
     NSLog(@"JSON String : %@",jsonString);
     
@@ -189,7 +189,7 @@
 	NSString *requesturl = [NSString stringWithFormat:@"%@/ws/event/0/attendees?eventId=%i",BaseURL,event_id];
     NSLog(@"Base URL :%@",requesturl);
     
-	NSString *jsonString = [NSString stringWithString:@""];
+	NSString *jsonString = @"";
     
 	NSString *responseStr=[[NetworkController SharedNetworkInstance] requestServerGetWithUrl:requesturl JSonString:jsonString withError:&error];
 	NSLog(@"Response %@",responseStr);
@@ -215,7 +215,7 @@
 			{	
                 
                 StudentBO *tempBo = [[StudentBO alloc]init];
-                tempBo.studentID= [[event objectForKey:@"id"] integerValue];
+                tempBo.studentID= [event objectForKey:@"id"];
                 tempBo.firstName= [event objectForKey:@"first_name"];
                 tempBo.lastName= [event objectForKey:@"last_name"];
                 tempBo.check_in= [event objectForKey:@"check_in"];
@@ -227,7 +227,7 @@
                 tempBo = nil;
                 
             }
-            NSLog(@"Attendees of Events ---------> %i", [attendeesArray count]);
+            NSLog(@"Attendees of Events aaa ---------> %i", [attendeesArray count]);
 			return [NSDictionary dictionaryWithObject:attendeesArray forKey:SuccessKey];
 		}
 		else {
@@ -259,7 +259,7 @@
     
     NSLog(@"Base URL :%@",requesturl);
     
-	NSString *jsonString = [NSString stringWithString:@""];
+	NSString *jsonString = @"";
     
 	NSString *responseStr=[[NetworkController SharedNetworkInstance] requestServerGetWithUrl:requesturl JSonString:jsonString withError:&error];
 	NSLog(@"Response %@",responseStr);
@@ -286,7 +286,7 @@
 			{	
 
                 StudentBO *tempBo = [[StudentBO alloc]init];
-                tempBo.studentID= [[event objectForKey:@"id"] integerValue];
+                tempBo.studentID= [event objectForKey:@"id"];
                 tempBo.firstName= [event objectForKey:@"first_name"];
                 tempBo.lastName= [event objectForKey:@"last_name"];
                 tempBo.check_in= [event objectForKey:@"check_in"];
@@ -300,7 +300,7 @@
                 tempBo = nil;
                 
             }
-            NSLog(@"Attendees of Events ---------> %i", [studentArray count]);
+            NSLog(@"Attendees of Events bbb  ---------> %i", [studentArray count]);
 			return [NSDictionary dictionaryWithObject:studentArray forKey:SuccessKey];
 		}
 		else {
@@ -319,7 +319,7 @@
 #pragma mark 
 #pragma mark Checkin
 
-+(NSDictionary*)checkInStudent:(int)eventID withUserID:(int)userId andEmailAddress:(NSString*)email{
++(NSDictionary*)checkInStudent:(int)eventID withUserID:(NSString*)userId andEmailAddress:(NSString*)email{
     
     /*
         if user id = 0;
@@ -330,7 +330,7 @@
     
 	NSError *error = nil;
     
-    NSString *requesturl = [NSString stringWithFormat:@"%@/ws/stu/checkin/%i?sid=%i",BaseURL,eventID,userId];
+    NSString *requesturl = [NSString stringWithFormat:@"%@/ws/stu/checkin/%i?sid=%@",BaseURL,eventID,userId];
  
     if(userId==0){
         requesturl = [NSString stringWithFormat:@"%@/ws/stu/checkin/%i?email=%@",BaseURL,eventID,email];
@@ -338,7 +338,7 @@
 	
     NSLog(@"Base URL :%@",requesturl);
     
-	NSString *jsonString = [NSString stringWithString:@""];
+	NSString *jsonString = @"";
     
 	NSString *responseStr=[[NetworkController SharedNetworkInstance] requestServerGetWithUrl:requesturl JSonString:jsonString withError:&error];
 	NSLog(@"Response %@",responseStr);
@@ -387,7 +387,7 @@
 	
     NSLog(@"Base URL :%@",requesturl);
     
-	NSString *jsonString = [NSString stringWithString:@""];
+	NSString *jsonString = @"";
     
 	NSString *responseStr=[[NetworkController SharedNetworkInstance] requestServerGetWithUrl:requesturl JSonString:jsonString withError:&error];
 	NSLog(@"Response %@",responseStr);
@@ -426,7 +426,7 @@
 			{	
                 
                 StudentBO *tempBo = [[StudentBO alloc]init];
-                tempBo.studentID= [[student objectForKey:@"id"] integerValue];
+                tempBo.studentID= [student objectForKey:@"id"];
                 tempBo.firstName= [student objectForKey:@"first_name"];
                 tempBo.lastName= [student objectForKey:@"last_name"];
                 tempBo.check_in= [student objectForKey:@"check_in"];
@@ -473,7 +473,7 @@
     NSString *requesturl = [NSString stringWithFormat:@"%@/ws/school/logo",BaseURL];
     NSLog(@"Base URL :%@",requesturl);
     
-	NSString *jsonString = [NSString stringWithString:@""];
+	NSString *jsonString = @"";
     
     NSLog(@"JSON String : %@",jsonString);
     

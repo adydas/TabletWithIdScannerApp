@@ -29,10 +29,10 @@
 -(void)populateData:(StudentBO*)student{
 
     studentName.text = [NSString stringWithFormat:@"%@ %@",student.firstName,student.lastName];
-    studentID.text = [NSString stringWithFormat:@"%i",student.studentID];
+    studentID.text = [NSString stringWithFormat:@"%@",student.studentID];
     NSLog(@"Checkin %@",student.check_in);
     isCheckedin.text = student.check_in;
-    checkinBtn.tag = student.studentID;
+//    checkinBtn.tag = student.studentID;
     if ([student.check_in isEqualToString:@"YES"]) {
         checkinBtn.enabled = NO;
     }

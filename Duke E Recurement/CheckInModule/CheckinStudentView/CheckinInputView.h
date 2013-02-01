@@ -20,7 +20,7 @@
     
     NSString *eventID;
     NSString *eventName;
-    int sID;
+    NSString *sID;
     
     IBOutlet UIButton *keypadBtn;
     IBOutlet UIButton *qrCodeBtn;

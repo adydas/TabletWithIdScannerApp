@@ -186,7 +186,7 @@
     if(currentSelectedRow>=0){
         eventSelectedView.hidden=NO;
         EventBO *temp = [eventsArray objectAtIndex:currentSelectedRow];
-        selectedEventName.text = [NSString stringWithFormat:temp.eventName];
+        selectedEventName.text = [NSString stringWithFormat:@"%@", temp.eventName];
     }
     
 }
@@ -335,7 +335,7 @@
     }
     if([eventsArray count]>0){
         EventBO *temp = [eventsArray objectAtIndex:indexPath.row];
-        cell.textLabel.text = [NSString stringWithFormat:temp.eventName];
+        cell.textLabel.text = [NSString stringWithFormat:@"%@", temp.eventName];
     }
     
     cell.textLabel.textColor = [UIColor whiteColor];
@@ -384,7 +384,7 @@
         }
         if([eventsArray count]>0){
             EventBO *temp = [eventsArray objectAtIndex:indexPath.row];
-            selectedEventName.text = [NSString stringWithFormat:temp.eventName];
+            selectedEventName.text = [NSString stringWithFormat:@"%@", temp.eventName];
             
             [eventWelcomeView removeFromSuperview];
             

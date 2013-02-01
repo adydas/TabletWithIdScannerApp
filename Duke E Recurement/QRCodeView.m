@@ -380,7 +380,7 @@ static QRCodeView *sharedInstance;
     
     NSAutoreleasePool *pool = [[NSAutoreleasePool alloc] init];
     
-    NSLog(@"student id%i",sID);
+    NSLog(@"student id aaaa %@",sID);
 	NSDictionary *dict = [BLController checkInStudent:[eventID intValue] withUserID:sID andEmailAddress:@""];
 	[self performSelectorOnMainThread:@selector(removeOverLay:) withObject:dict waitUntilDone:NO];
 	[pool release];

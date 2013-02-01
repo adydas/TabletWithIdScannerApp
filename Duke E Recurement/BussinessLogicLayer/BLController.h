@@ -23,7 +23,7 @@
 
 +(NSDictionary*)getStudent:(NSString *)fName lastName:(NSString*)lName andEventID:(NSInteger)eID withOption :(int)opt;
 
-+(NSDictionary*)checkInStudent:(int)eventID withUserID:(int)userId andEmailAddress:(NSString*)email;
++(NSDictionary*)checkInStudent:(int)eventID withUserID:(NSString*)userId andEmailAddress:(NSString*)email;
 
 +(NSDictionary*)getStudentInformationWithQRCode:(NSString*)qrCode withEventID:(int)eID;
 

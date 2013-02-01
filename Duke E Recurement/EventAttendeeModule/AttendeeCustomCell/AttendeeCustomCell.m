@@ -31,7 +31,7 @@
     studentEmail.text = student.email;
     NSLog(@"Checkin %@",student.check_in);
     isCheckedin.text = student.check_in;
-    checkinBtn.tag = student.studentID;
+//    checkinBtn.tag = student.studentID;
     if ([student.check_in isEqualToString:@"YES"]) {
         checkinBtn.enabled = NO;
     }

@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 
 @interface StudentBO : NSObject{
-    NSInteger studentID;
+    NSString *studentID;
     NSString *firstName;
     NSString *lastName;
     NSString *check_in;
@@ -18,7 +18,7 @@
     NSString *partnerKey;
 }
 
-@property(nonatomic, readwrite) NSInteger studentID;
+@property(nonatomic, retain) NSString *studentID;
 @property(nonatomic, retain) NSString *firstName;
 @property(nonatomic, retain) NSString *lastName;
 @property(nonatomic, retain) NSString *check_in;

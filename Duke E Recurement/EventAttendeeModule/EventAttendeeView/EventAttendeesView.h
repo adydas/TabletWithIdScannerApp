@@ -20,7 +20,7 @@
     
 
     int currentSelectedIndex;
-    int sID;
+    NSString *sID;
     IBOutlet UITableView *attendeesTable;
 }
 

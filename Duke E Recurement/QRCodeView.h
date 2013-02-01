@@ -34,7 +34,7 @@ IBOutlet UILabel *eventNameLbl;
 
 NSString *eventID;
 NSString *eventName;
-int sID;
+NSString *sID;
     
     IBOutlet UIButton *qrCodeBtn;
     IBOutlet UIButton *keypadBtn;

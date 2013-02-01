@@ -22,7 +22,7 @@
     IBOutlet UITableView *studentTable;
     
     int currentSelectedIndex;
-    int sID;
+    NSString *sID;
 }
 
 +(SearchStudentView*)loadInstanceFromNib;
